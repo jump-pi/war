@@ -1,0 +1,48 @@
+{
+	"apis": {
+		"VV": [{
+			"description": "To call:  http:\/\/server:8080\/jump-pi_ddd\/sv\/{op}\/{param}. You can use the playground or tools like RESTClient or Postman to POST a JSON body. Errors format follows Twitter API conventions (https:\/\/dev.twitter.com\/overview\/api\/response-codes)",
+			"jsondocId": "0c6d351d-7518-4646-9cce-31f092a2bde4",
+			"methods": [{
+				"apierrors": [{
+					"code": "99",
+					"description": "Unespecified error",
+					"jsondocId": "45e278ca-55bc-45c1-82fd-a455e9e4a603"
+				}],
+				"bodyobject": null,
+				"consumes": [],
+				"description": "Simple GET operation with path param:<br><a href='resps\/Services_opGet.json' target='_blank'>Example output<\/a>",
+				"displayMethodAs": "SUMMARY",
+				"displayedMethodString": "op\/{id}",
+				"path": "op\/{id}",
+				"pathparameters": [{
+					"description": "Test value: 123",
+					"required": "true"
+				}],
+				"produces": ["application\/json"],
+				"queryparameters": [],
+				"response": {
+					"jsondocType": {
+						"oneLineText": "json",
+						"type": ["json"]
+					}
+				},
+				"responsestatuscode": "200",
+				"summary": "op\/{id}",
+				"verb": "GET"
+			}]
+		}]
+	},
+	"basePath": "http:\/\/localhost:8080\/jump-pi_ddd\/sv\/",
+	"displayMethodAs": "SUMMARY",
+	"flows": {
+		
+	},
+	"objects": {
+		
+	},
+	"playgroundEnabled": true,
+	"version": "1.01"	
+}
+
+			
