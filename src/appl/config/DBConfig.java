@@ -9,7 +9,7 @@ import com.jumppi.frwk.util.Util;
 
 public class DBConfig implements IDBConfig {
 		
-	public void setup(Hashtable<String, DBDescriptor> gDbMap, String dbUcsimDbName, String dbUcsimUsername, String dbUcsimPassword) {
+	public void setup(Hashtable<String, DBDescriptor> gDbMap, String dbUcsimDbName, int dbUcsimDbPort, String dbUcsimUsername, String dbUcsimPassword) {
         DBDescriptor dbd = null;
 
         //////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@ public class DBConfig implements IDBConfig {
         dbd.params = "autoReconnect=true&characterEncoding=utf-8&useUnicode=true";
 
         dbd.server = "127.0.0.1";
-        dbd.port = "3306";
+        dbd.port = "" + dbUcsimDbPort;
         dbd.username = dbUcsimUsername;
         if (Util.haveIp("x.x.x.x")) {                  // Production environment
             dbd.password = "yyyyy";
